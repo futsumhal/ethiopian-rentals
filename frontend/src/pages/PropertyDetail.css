@@ -1,0 +1,153 @@
+.rh-detail {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 24px 80px;
+}
+
+.rh-back {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--rh-text, #222);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rh-back:hover {
+  text-decoration: underline;
+}
+
+.rh-detail-state {
+  text-align: center;
+  padding: 80px 16px;
+}
+
+.rh-detail-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--rh-text, #222);
+  margin-bottom: 4px;
+}
+
+.rh-detail-location {
+  color: var(--rh-muted, #6a6a6a);
+  margin-bottom: 20px;
+}
+
+.rh-detail-image {
+  width: 100%;
+  max-height: 520px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 20px;
+  background: #f0f0f0;
+}
+
+.rh-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 48px;
+  margin-top: 32px;
+  align-items: start;
+}
+
+.rh-detail-facts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rh-border, #ebebeb);
+  color: var(--rh-text, #222);
+  font-weight: 500;
+}
+
+.rh-badge-dark {
+  background: var(--rh-text, #222);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.rh-detail-section {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rh-border, #ebebeb);
+}
+
+.rh-detail-section h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.rh-detail-description {
+  white-space: pre-line;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Contact card */
+.rh-contact-card {
+  position: sticky;
+  top: 96px;
+  border: 1px solid var(--rh-border, #ebebeb);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.rh-contact-price {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.rh-contact-price strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.rh-contact-price span {
+  color: var(--rh-muted, #6a6a6a);
+}
+
+.rh-contact-name {
+  margin-bottom: 16px;
+}
+
+.rh-call-btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff385c, #e31c5f);
+  transition: box-shadow 0.15s ease;
+}
+
+.rh-call-btn:hover {
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(255, 56, 92, 0.4);
+}
+
+.rh-contact-hint {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--rh-muted, #6a6a6a);
+}
+
+@media (max-width: 899px) {
+  .rh-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .rh-contact-card {
+    position: static;
+  }
+}

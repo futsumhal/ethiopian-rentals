@@ -1,0 +1,133 @@
+:root {
+  --rh-accent: #ff385c;
+  --rh-accent-dark: #e31c5f;
+  --rh-text: #222222;
+  --rh-muted: #6a6a6a;
+  --rh-border: #ebebeb;
+}
+
+.rh-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid var(--rh-border);
+}
+
+.rh-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
+
+/* Brand */
+.rh-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--rh-accent);
+}
+
+.rh-brand-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--rh-accent);
+  color: #fff;
+}
+
+.rh-brand-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--rh-accent);
+}
+
+/* Middle links */
+.rh-links {
+  display: flex;
+  gap: 8px;
+}
+
+.rh-links a {
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: var(--rh-text);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.rh-links a:hover {
+  background: #f5f5f5;
+}
+
+/* Right side */
+.rh-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rh-btn {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.rh-btn-text {
+  background: transparent;
+  color: var(--rh-text);
+}
+
+.rh-btn-text:hover {
+  background: #f5f5f5;
+}
+
+.rh-btn-primary {
+  background: linear-gradient(90deg, var(--rh-accent), var(--rh-accent-dark));
+  color: #fff;
+}
+
+.rh-btn-primary:hover {
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(255, 56, 92, 0.35);
+  transform: translateY(-1px);
+}
+
+.rh-btn-ghost {
+  background: #fff;
+  color: var(--rh-text);
+  border-color: #dddddd;
+}
+
+.rh-btn-ghost:hover {
+  border-color: var(--rh-text);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .rh-links {
+    display: none;
+  }
+
+  .rh-navbar-inner {
+    padding: 12px 16px;
+  }
+
+  .rh-brand-text {
+    font-size: 1.05rem;
+  }
+}
